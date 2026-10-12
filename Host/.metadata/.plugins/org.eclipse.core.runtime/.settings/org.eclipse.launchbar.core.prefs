@@ -9,6 +9,7 @@ org.eclipse.launchbar.core.descriptorType.default\:03_Pointer/activeLaunchTarget
 org.eclipse.launchbar.core.descriptorType.default\:20.01_While_Loop/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:20.02_Exercise_While_Loop/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:20.04_Pyramid_Exercise/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:21.01_Const_Variable/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Bit_Extraction/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:math/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:math/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
