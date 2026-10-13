@@ -56,3 +56,13 @@ int main(void)
 		}
 	}
 }
+
+/*
+ * Optimization
+ *  O0
+ *  arm-none-eabi-objdump -h -S 22.1_LEDcntrlPA0.elf  > "22.1_LEDcntrlPA0.list"
+   text	   data	    bss	    dec	    hex	filename
+    844	      0	   1568	   2412	    96c	22.1_LEDcntrlPA0.elf
+
+
+ */
