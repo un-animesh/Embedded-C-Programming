@@ -21,14 +21,14 @@
 
 int main(void)
 {
-    uint32_t *pClkCtrlReg = (uint32_t*) 0x40023830;
-    uint32_t *pGPIOAmodReg =(uint32_t*) 0x40020000;
-    uint32_t *pGPIOAdataReg = (uint32_t*) 0x40020014;
+    uint32_t volatile *pClkCtrlReg = (uint32_t*) 0x40023830;
+    uint32_t volatile *pGPIOAmodReg =(uint32_t*) 0x40020000;
+    uint32_t volatile *pGPIOAdataReg = (uint32_t*) 0x40020014;
 
-    uint32_t *pGPIODmodReg = (uint32_t*) 0x40020C00;
-    uint32_t *pGPIODdataReg = (uint32_t*) 0x40020C10;
+    uint32_t volatile *pGPIODmodReg = (uint32_t*) 0x40020C00;
+    uint32_t volatile *pGPIODdataReg = (uint32_t*) 0x40020C10;
 
-    uint32_t *pGPIODpupdReg = (uint32_t*)0x40020C0C;
+    uint32_t volatile *pGPIODpupdReg = (uint32_t*)0x40020C0C;
 
 //    Enable the Clock peripheral of AHB1 for GPIOA and GPIOD
     *pClkCtrlReg |= (1 << 0);
@@ -47,7 +47,7 @@ int main(void)
 
 	while(1)
 	{
-		uint8_t pinStatus = (uint8_t)(*pGPIODdataReg & 0x4);
+		uint8_t volatile pinStatus = (uint8_t)(*pGPIODdataReg & 0x4);
 		if(pinStatus) // Check if GPIOD is High
 		{
 			*pGPIOAdataReg |= (1 << 5); // Turn On

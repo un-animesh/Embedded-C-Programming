@@ -1,11 +1,23 @@
-.metadata/
+# Build output
 Debug/
 Release/
+
+# Compiled files
 *.o
 *.d
 *.elf
+*.hex
+*.bin
 *.map
 *.list
-*.su
-*.cyclo
+
+# Debugger-generated files
+*.launch
+
+# IDE workspace settings
+.metadata/
 .settings/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
