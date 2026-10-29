@@ -1,12 +1,22 @@
-19:43:27 **** Incremental Build of configuration Debug for project 21.01_Const_Variable ****
+12:30:29 **** Incremental Build of configuration Debug for project 25.3_Struct_DataAlignment ****
 make all 
 Building file: ../main.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:36:26: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wformat=]
+   36 |                 printf("%u               %X\n",ptr ,*ptr);
+      |                         ~^                     ~~~
+      |                          |                     |
+      |                          unsigned int          uint8_t * {aka unsigned char *}
+      |                         %hhn
 Finished building: ../main.c
  
-Building target: 21.01_Const_Variable
+Building target: 25.3_Struct_DataAlignment
 Invoking: GCC C Linker
-gcc  -o "21.01_Const_Variable" ./main.o   
-Finished building target: 21.01_Const_Variable
+gcc  -o "25.3_Struct_DataAlignment" ./main.o   
+Finished building target: 25.3_Struct_DataAlignment
  
+12:30:36 **** Incremental Build of configuration Debug for project 25.3_Struct_DataAlignment ****
+make all 
+make: Nothing to be done for 'all'.
