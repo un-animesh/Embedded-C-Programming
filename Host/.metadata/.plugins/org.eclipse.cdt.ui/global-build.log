@@ -1,4 +1,4 @@
-21:16:22 **** Incremental Build of configuration Debug for project 28.5_2array_exercise ****
+05:12:39 **** Incremental Build of configuration Debug for project 28.5_2array_exercise ****
 make all 
 Building file: ../main.c
 Invoking: GCC C Compiler
@@ -10,6 +10,3 @@ Invoking: GCC C Linker
 gcc  -o "28.5_2array_exercise" ./main.o   
 Finished building target: 28.5_2array_exercise
  
-21:16:34 **** Incremental Build of configuration Debug for project 28.5_2array_exercise ****
-make all 
-make: Nothing to be done for 'all'.
